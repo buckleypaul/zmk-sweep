@@ -185,41 +185,9 @@
             key-positions = <17 18>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <26 27>;
-        };
-
         delete {
             bindings = <&kp DEL>;
             key-positions = <13 12>;
-        };
-
-        capsword {
-            bindings = <&caps_word>;
-            key-positions = <16 18>;
-        };
-
-        space-left {
-            bindings = <&kp LC(LEFT)>;
-            key-positions = <11 2>;
-            require-prior-idle-ms = <400>;
-        };
-
-        space-right {
-            bindings = <&kp LC(RIGHT)>;
-            key-positions = <13 2>;
-            require-prior-idle-ms = <400>;
-        };
-
-        tab-prev {
-            bindings = <&kp LC(GRAVE)>;
-            key-positions = <21 12>;
-        };
-
-        tab-next {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <23 12>;
         };
 
         volume-up {
@@ -308,10 +276,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W                &kp E            &kp R                               &kp T                           &kp Y        &kp U                           &kp I                &kp O                  &kp P
-&hml LEFT_GUI A  &lt 1 S              &lt 2 D          &lt 3 F                             &kp G                           &kp H        &lt 3 J                         &lt 2 K              &kp L                  &hmr LEFT_GUI SQT
-&hml LEFT_GUI Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_SHIFT V                   &kp B                           &kp N        &hmr LEFT_SHIFT M               &hmr LEFT_ALT COMMA  &hmr LEFT_CONTROL DOT  &hmr LEFT_GUI SLASH
-                                                       &ht LS(LA(LC(LEFT_GUI))) BACKSPACE  &ht_pref_hold LEFT_SHIFT TAB    &lt 1 SPACE  &ht LS(LA(LC(LEFT_GUI))) ENTER
+&kp Q            &kp W                &kp E            &kp R                   &kp T                           &kp Y        &kp U               &kp I                &kp O                  &kp P
+&hml LEFT_GUI A  &lt 1 S              &lt 2 D          &lt 3 F                 &kp G                           &kp H        &lt 3 J             &lt 2 K              &kp L                  &hmr LEFT_GUI SQT
+&hml LEFT_GUI Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_SHIFT V       &kp B                           &kp N        &hmr LEFT_SHIFT M   &hmr LEFT_ALT COMMA  &hmr LEFT_CONTROL DOT  &hmr LEFT_GUI SLASH
+                                                       &ht LEFT_GUI BACKSPACE  &ht_pref_hold LEFT_SHIFT TAB    &lt 1 SPACE  &ht LEFT_ALT ENTER
             >;
         };
 
