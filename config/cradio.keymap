@@ -71,7 +71,6 @@
 
         rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
-            label = "REQUIRE_PRIOR_IDLE";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <175>;
@@ -82,7 +81,6 @@
 
         hml: hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_HOLD_TAP_LEFT";
             flavor = "tap-preferred";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -96,7 +94,6 @@
 
         hmr: hold_tap_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_HOLD_TAP_RIGHT";
             flavor = "tap-preferred";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -110,7 +107,6 @@
 
         qt: quick_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_TAP";
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
@@ -123,7 +119,6 @@
 
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -134,7 +129,6 @@
 
         hold_temp_layer: hold_temp_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TEMP_LAYER";
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
@@ -144,7 +138,6 @@
 
         ht_pref_hold: ht_pref_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_PREF_HOLD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -156,7 +149,6 @@
 
         sticky_tap: sticky_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_TAP";
             bindings = <&mo>, <&sk>;
 
             #binding-cells = <2>;
@@ -251,21 +243,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp UNDER &kp T>;
-            label = "TYPEDEF";
         };
 
         uint: uint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp U &kp I &kp N &kp T>;
-            label = "UINT";
         };
 
         int: int {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp I &kp N &kp T>;
-            label = "INT";
         };
     };
 
