@@ -174,7 +174,7 @@
 
         delete {
             bindings = <&kp DEL>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
         };
 
         volume-up {
@@ -214,22 +214,27 @@
 
         spaces_left {
             bindings = <&kp LC(LEFT)>;
-            key-positions = <11 12>;
+            key-positions = <11 2>;
         };
 
         spaces_right {
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <13 12>;
+            key-positions = <13 2>;
         };
 
         tab_prev {
             bindings = <&kp RG(GRAVE)>;
-            key-positions = <21 22>;
+            key-positions = <21 12>;
         };
 
         tab_next {
             bindings = <&kp LG(TAB)>;
-            key-positions = <23 22>;
+            key-positions = <23 12>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
         };
     };
 
@@ -260,10 +265,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W                &kp E            &kp R              &kp T            &kp Y        &kp U              &kp I            &kp O                &kp P
-&hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G            &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_ALT K  &hmr LEFT_CONTROL L  &hmr LEFT_GUI SQT
-&kp Z            &kp X                &kp C            &kp V              &kp B            &kp N        &kp M              &kp COMMA        &kp PERIOD           &kp SLASH
-                                                       &lt 1 TAB          &kp BACKSPACE    &lt 3 SPACE  &lt 2 ENTER
+&kp Q            &kp W                &kp E            &kp R              &kp T             &kp Y        &kp U              &kp I            &kp O                &kp P
+&hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G             &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_ALT K  &hmr LEFT_CONTROL L  &hmr LEFT_GUI SQT
+&kp Z            &kp X                &kp C            &kp V              &kp B             &kp N        &kp M              &kp COMMA        &kp PERIOD           &kp SLASH
+                                                       &lt 1 TAB          &kp LEFT_SHIFT    &lt 3 SPACE  &lt 2 ENTER
             >;
         };
 
