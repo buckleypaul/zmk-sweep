@@ -223,12 +223,12 @@
         };
 
         tab_prev {
-            bindings = <&kp RG(GRAVE)>;
+            bindings = <&kp LC(GRAVE)>;
             key-positions = <21 12>;
         };
 
         tab_next {
-            bindings = <&kp LG(TAB)>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <23 12>;
         };
 
