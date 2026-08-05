@@ -167,11 +167,6 @@
             key-positions = <13 11>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <11 12>;
-        };
-
         enter-right {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
@@ -179,7 +174,7 @@
 
         delete {
             bindings = <&kp DEL>;
-            key-positions = <13 12>;
+            key-positions = <13 14>;
         };
 
         volume-up {
@@ -202,21 +197,6 @@
             key-positions = <30 33>;
         };
 
-        cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <21 23>;
-        };
-
-        copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <21 22>;
-        };
-
-        paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <23 22>;
-        };
-
         hyphen {
             bindings = <&kp MINUS>;
             key-positions = <16 17>;
@@ -227,14 +207,29 @@
             key-positions = <13 16>;
         };
 
-        find-app {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <12 17>;
-        };
-
         screenshot {
             bindings = <&kp LS(LG(NUMBER_4))>;
             key-positions = <0 3>;
+        };
+
+        spaces_left {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <11 12>;
+        };
+
+        spaces_right {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <13 12>;
+        };
+
+        tab_prev {
+            bindings = <&kp RG(GRAVE)>;
+            key-positions = <21 22>;
+        };
+
+        tab_next {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <23 22>;
         };
     };
 
@@ -265,19 +260,19 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W                &kp E            &kp R                   &kp T                           &kp Y        &kp U               &kp I                &kp O                  &kp P
-&hml LEFT_GUI A  &lt 1 S              &lt 2 D          &lt 3 F                 &kp G                           &kp H        &lt 3 J             &lt 2 K              &kp L                  &hmr LEFT_GUI SQT
-&hml LEFT_GUI Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_SHIFT V       &kp B                           &kp N        &hmr LEFT_SHIFT M   &hmr LEFT_ALT COMMA  &hmr LEFT_CONTROL DOT  &hmr LEFT_GUI SLASH
-                                                       &ht LEFT_GUI BACKSPACE  &ht_pref_hold LEFT_SHIFT TAB    &lt 1 SPACE  &ht LEFT_ALT ENTER
+&kp Q            &kp W                &kp E            &kp R              &kp T        &kp Y        &kp U              &kp I            &kp O                &kp P
+&hml LEFT_GUI A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_ALT K  &hmr LEFT_CONTROL L  &hmr LEFT_GUI SQT
+&kp Z            &kp X                &kp C            &kp V              &kp B        &kp N        &kp M              &kp COMMA        &kp PERIOD           &kp SLASH
+                                                       &kp BACKSPACE      &lt 3 TAB    &lt 2 SPACE  &lt 1 ENTER
             >;
         };
 
         nav {
             bindings = <
-&none  &none  &none          &none          &none     &none   &none         &kp PG_UP         &kp PG_DN     &none
-&none  &none  &kp LC(LEFT)   &kp LC(RIGHT)  &none     &none   &kp LEFT      &kp UP_ARROW      &kp DOWN      &kp RIGHT
-&none  &none  &kp LC(GRAVE)  &kp LC(TAB)    &none     &none   &kp LG(LEFT)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)
-                             &trans         &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp PG_UP     &kp PG_DN  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans     &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
