@@ -212,26 +212,6 @@
             key-positions = <0 3>;
         };
 
-        spaces_left {
-            bindings = <&kp LC(LEFT)>;
-            key-positions = <11 2>;
-        };
-
-        spaces_right {
-            bindings = <&kp LC(RIGHT)>;
-            key-positions = <13 2>;
-        };
-
-        tab_prev {
-            bindings = <&kp LC(GRAVE)>;
-            key-positions = <21 12>;
-        };
-
-        tab_next {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <23 12>;
-        };
-
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
