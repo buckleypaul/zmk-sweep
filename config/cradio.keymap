@@ -239,10 +239,10 @@
 
         nav {
             bindings = <
-&kp LC(LEFT)  &kp LC(GRAVE)  &kp LC(TAB)   &kp LC(RIGHT)  &trans    &trans  &trans  &trans  &trans  &trans
-&kp LEFT      &kp DOWN       &kp UP_ARROW  &kp RIGHT      &trans    &trans  &trans  &trans  &trans  &trans
-&trans        &trans         &trans        &trans         &trans    &trans  &trans  &trans  &trans  &trans
-                                           &trans         &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans    &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans    &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
