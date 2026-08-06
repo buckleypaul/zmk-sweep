@@ -221,6 +221,11 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <23 22>;
         };
+
+        layer-nums {
+            bindings = <&mo 2>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
