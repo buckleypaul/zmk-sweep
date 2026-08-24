@@ -1,0 +1,17 @@
+# west workspace — everything below is fetched by `west update`, not source.
+# See config/west.yml; CI recreates these (.github/workflows/build.yml).
+/.west/
+/zmk/
+/zephyr/
+/modules/
+/optional/
+/bootloader/
+/tools/
+
+# Build output
+/build/
+/.build-docker/
+*.uf2
+
+# macOS
+.DS_Store
