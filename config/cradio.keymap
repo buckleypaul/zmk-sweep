@@ -244,8 +244,13 @@
 
         combo {
             bindings = <&kp TAB>;
-            key-positions = <16 17>;
+            key-positions = <13 12>;
             require-prior-idle-ms = <125>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
         };
     };
 
